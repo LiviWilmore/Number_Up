@@ -1,0 +1,10 @@
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body {
+    margin: 0;
+}
+
+font-size: max(10px, min(18px, calc(100vw * 16px/variables.$max-content-width)));
