@@ -5,6 +5,45 @@ html {
 
 body {
     margin: 0;
+    overflow: hidden;
+    background-image: url(textures/Metal_Background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
 }
 
-font-size: max(10px, min(18px, calc(100vw * 16px/variables.$max-content-width)));
+#incrementText { 
+    font-size: 20vw; 
+    text-align: center; 
+    white-space: nowrap;
+    position: relative; 
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+#incrementText {
+    background: linear-gradient(
+        to right,
+        #ff1a1a 0%,
+        #ffff00 50%,
+        #113dff 100%
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+
+    z-index: 999999;
+
+    text-shadow: -5px 8px 7px rgba(251, 251, 251, 0.3);
+
+}
+
+.myDiv {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
