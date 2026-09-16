@@ -33,6 +33,7 @@ window.onload = function() {
 
 
 function incrementButton() {
+    if (event.repeat) return;
     let value = Number(element.textContent);
 
     value++;
